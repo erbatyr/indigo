@@ -1,0 +1,11 @@
+{% extends 'table/base.html' %}
+{% block content %}
+    {% if perms.table.delete_company %}
+    <form method="post">{% csrf_token %} 
+        <p>Are you sure you want to delete "{{ object }}"?</p> 
+        <input type="submit" value="Confirm"> 
+    </form> 
+    {% else %}
+        <p>You can't delete "{{ object }}"</p>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'table/base.html' %}
+ 
+{% block content %}
+    {% if perms.table.change_company %}
+    <h1>Edit Company</h1>
+    <form action="" method="post">{% csrf_token %}
+      {{ form.as_p }}
+    <input type="submit" value="Update" />
+    </form>
+    {% else %}
+    <p>You can't change company data</p>
+    {% endif %}
+{% endblock content %}

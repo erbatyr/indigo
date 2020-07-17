@@ -1,0 +1,25 @@
+{% extends 'table/base.html' %}
+{% block content %}
+    <table >
+        <thead>
+          <tr>
+              <th>rank</th>
+              <th>employer</th>
+              <th>employeesCount</th>
+              <th>medianSalary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ company.rank }}</td>
+            <td>{{ company.employer }}</td>
+            <td>{{ company.employeesCount }}</td>
+            <td>{{ company.medianSalary }}</td>
+            
+            {% if perms.table.change_company %}
+            <td><a href="edit">Edit</a></td>
+            {% endif %}
+          </tr>
+        </tbody>
+    </table>
+{% endblock %}
