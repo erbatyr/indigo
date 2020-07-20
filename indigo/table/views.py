@@ -26,7 +26,10 @@ class SortView(generic.ListView):
 def index(request, sort_data):
     all_table = Company.objects.order_by(sort_data)
     context = {'all_table': all_table}
-    return render(request, 'table/index.html', context)
+    if str(sort_data).startswith('-'):
+        return render(request, 'table/index.html', context)
+    else:
+        return render(request, 'table/index_minus_sorted.html', context)
 
 def download(request):
     qs = Company.objects.all()

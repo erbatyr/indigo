@@ -1,0 +1,26 @@
+{% extends 'table/base.html' %}
+{% block content %}
+<table >
+  <thead>
+    <tr>
+        <th><a href="sort_by=-rank">rank</a></th>
+        <th><a href="sort_by=-employer">employer</a></th>
+        <th><a href="sort_by=-employeesCount">employeesCount</a></th>
+        <th><a href="sort_by=-medianSalary">medianSalary</a></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in all_table %}
+    <tr>
+      <td>{{ row.rank }}</td>
+      <td><a href='/table/{{ row.id }}'>{{ row.employer }}</a></td>
+      <td>{{ row.employeesCount }}</td>
+      <td>{{ row.medianSalary }}</td>
+      {% if perms.table.change_company %}
+        <td><a href="/table/{{ row.id }}/delete">delete</a></td>
+      {% endif %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

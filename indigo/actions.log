@@ -1,0 +1,158 @@
+Exception while resolving variable 'sorted_data' in template 'table/index.html'.
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 828, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'sorted_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 834, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'sorted_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 842, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'sorted_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [sorted_data] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x000002005FCBECA8>>, 'request': <WSGIRequest: GET '/table/'>, 'user': <SimpleLazyObject: <User: erbatyr>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000002005FC46448>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000002005FCB34C8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'paginator': None, 'page_obj': None, 'is_paginated': False, 'object_list': <QuerySet [<Company: Walmart>, <Company: Amazon>, <Company: Yum China>, <Company: Kroger>, <Company: Home Depot>, <Company: Berkshire Hathaway>, <Company: International Business Machines>, <Company: FedEx>, <Company: United Parcel Service>, <Company: Target Corporation>, <Company: General Electric>, <Company: Walgreens Boots Alliance>, <Company: Starbucks>, <Company: Albertsons>, <Company: PepsiCo>, <Company: Wells Fargo>, <Company: Cognizant Technology Solutions>, <Company: UnitedHealth Group>, <Company: Lowe's>, <Company: AT&T>, '...(remaining elements truncated)...']>, 'all_table': <QuerySet [<Company: Walmart>, <Company: Amazon>, <Company: Yum China>, <Company: Kroger>, <Company: Home Depot>, <Company: Berkshire Hathaway>, <Company: International Business Machines>, <Company: FedEx>, <Company: United Parcel Service>, <Company: Target Corporation>, <Company: General Electric>, <Company: Walgreens Boots Alliance>, <Company: Starbucks>, <Company: Albertsons>, <Company: PepsiCo>, <Company: Wells Fargo>, <Company: Cognizant Technology Solutions>, <Company: UnitedHealth Group>, <Company: Lowe's>, <Company: AT&T>, '...(remaining elements truncated)...']>, 'view': <table.views.SortView object at 0x000002005FCB35C8>}, {'block': <Block Node: content. Contents: [<TextNode: '\n<table >\n  <thead>\n    <'>, <Variable Node: sorted_data>, <TextNode: '">rank</a></th>\n        <'>, <ForNode: for row in all_table, tail_len: 13>, <TextNode: '\n  </tbody>\n</table>\n'>]>}]
+Exception while resolving variable 'sorted_data' in template 'table/index.html'.
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 828, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'sorted_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 834, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'sorted_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 842, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'sorted_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [sorted_data] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x000001BC88CF2828>>, 'request': <WSGIRequest: GET '/table/'>, 'user': <SimpleLazyObject: <User: erbatyr>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001BC88D0E248>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001BC88CE4108>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'paginator': None, 'page_obj': None, 'is_paginated': False, 'object_list': <QuerySet [<Company: Walmart>, <Company: Amazon>, <Company: Yum China>, <Company: Kroger>, <Company: Home Depot>, <Company: Berkshire Hathaway>, <Company: International Business Machines>, <Company: FedEx>, <Company: United Parcel Service>, <Company: Target Corporation>, <Company: General Electric>, <Company: Walgreens Boots Alliance>, <Company: Starbucks>, <Company: Albertsons>, <Company: PepsiCo>, <Company: Wells Fargo>, <Company: Cognizant Technology Solutions>, <Company: UnitedHealth Group>, <Company: Lowe's>, <Company: AT&T>, '...(remaining elements truncated)...']>, 'all_table': <QuerySet [<Company: Walmart>, <Company: Amazon>, <Company: Yum China>, <Company: Kroger>, <Company: Home Depot>, <Company: Berkshire Hathaway>, <Company: International Business Machines>, <Company: FedEx>, <Company: United Parcel Service>, <Company: Target Corporation>, <Company: General Electric>, <Company: Walgreens Boots Alliance>, <Company: Starbucks>, <Company: Albertsons>, <Company: PepsiCo>, <Company: Wells Fargo>, <Company: Cognizant Technology Solutions>, <Company: UnitedHealth Group>, <Company: Lowe's>, <Company: AT&T>, '...(remaining elements truncated)...']>, 'view': <table.views.SortView object at 0x000001BC88CE4208>}, {'block': <Block Node: content. Contents: [<TextNode: '\n<table >\n  <thead>\n    <'>, <Variable Node: sorted_data>, <TextNode: '">rank</a></th>\n        <'>, <ForNode: for row in all_table, tail_len: 13>, <TextNode: '\n  </tbody>\n</table>\n'>]>}]
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\core\handlers\base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\urls\resolvers.py", line 575, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'table.urls' from 'C:\\Users\\erbatyr\\Desktop\\indigo\\indigo\\table\\urls.py'> (None:None) 'table/'>, <URLPattern '' [name='index']>], [<URLResolver <module 'table.urls' from 'C:\\Users\\erbatyr\\Desktop\\indigo\\indigo\\table\\urls.py'> (None:None) 'table/'>, <URLPattern 'sort_by=<str:sort_data>' [name='index_sorted']>], [<URLResolver <module 'table.urls' from 'C:\\Users\\erbatyr\\Desktop\\indigo\\indigo\\table\\urls.py'> (None:None) 'table/'>, <URLPattern '<int:pk>/' [name='detail']>], [<URLResolver <module 'table.urls' from 'C:\\Users\\erbatyr\\Desktop\\indigo\\indigo\\table\\urls.py'> (None:None) 'table/'>, <URLPattern '<int:pk>/edit' [name='edit']>], [<URLResolver <module 'table.urls' from 'C:\\Users\\erbatyr\\Desktop\\indigo\\indigo\\table\\urls.py'> (None:None) 'table/'>, <URLPattern '<int:pk>/delete/' [name='delete']>], [<URLResolver <module 'table.urls' from 'C:\\Users\\erbatyr\\Desktop\\indigo\\indigo\\table\\urls.py'> (None:None) 'table/'>, <URLPattern 'new_company/' [name='new_company']>], [<URLResolver <module 'table.urls' from 'C:\\Users\\erbatyr\\Desktop\\indigo\\indigo\\table\\urls.py'> (None:None) 'table/'>, <URLResolver <module 'django.contrib.auth.urls' from 'C:\\Users\\erbatyr\\Envs\\django\\lib\\site-packages\\django\\contrib\\auth\\urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'table.urls' from 'C:\\Users\\erbatyr\\Desktop\\indigo\\indigo\\table\\urls.py'> (None:None) 'table/'>, <URLPattern 'data.json' [name='download']>]], 'path': 'table/sort_by='}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 828, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 836, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 842, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\core\handlers\base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\urls\resolvers.py", line 575, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'table.urls' from 'C:\\Users\\erbatyr\\Desktop\\indigo\\indigo\\table\\urls.py'> (None:None) 'table/'>, <URLPattern '' [name='index']>], [<URLResolver <module 'table.urls' from 'C:\\Users\\erbatyr\\Desktop\\indigo\\indigo\\table\\urls.py'> (None:None) 'table/'>, <URLPattern 'sort_by=<str:sort_data>' [name='index_sorted']>], [<URLResolver <module 'table.urls' from 'C:\\Users\\erbatyr\\Desktop\\indigo\\indigo\\table\\urls.py'> (None:None) 'table/'>, <URLPattern '<int:pk>/' [name='detail']>], [<URLResolver <module 'table.urls' from 'C:\\Users\\erbatyr\\Desktop\\indigo\\indigo\\table\\urls.py'> (None:None) 'table/'>, <URLPattern '<int:pk>/edit' [name='edit']>], [<URLResolver <module 'table.urls' from 'C:\\Users\\erbatyr\\Desktop\\indigo\\indigo\\table\\urls.py'> (None:None) 'table/'>, <URLPattern '<int:pk>/delete/' [name='delete']>], [<URLResolver <module 'table.urls' from 'C:\\Users\\erbatyr\\Desktop\\indigo\\indigo\\table\\urls.py'> (None:None) 'table/'>, <URLPattern 'new_company/' [name='new_company']>], [<URLResolver <module 'table.urls' from 'C:\\Users\\erbatyr\\Desktop\\indigo\\indigo\\table\\urls.py'> (None:None) 'table/'>, <URLResolver <module 'django.contrib.auth.urls' from 'C:\\Users\\erbatyr\\Envs\\django\\lib\\site-packages\\django\\contrib\\auth\\urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'table.urls' from 'C:\\Users\\erbatyr\\Desktop\\indigo\\indigo\\table\\urls.py'> (None:None) 'table/'>, <URLPattern 'data.json' [name='download']>]], 'path': 'table/sort_by='}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 828, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 836, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 842, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'django.contrib.auth.urls' from 'C:\\Users\\erbatyr\\Envs\\django\\lib\\site-packages\\django\\contrib\\auth\\urls.py'> (None:None) 'accounts/'>
+Exception while resolving variable 'sorted_data' in template 'table/index.html'.
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 828, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'sorted_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 834, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'sorted_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 842, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'sorted_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\erbatyr\Envs\django\lib\site-packages\django\template\base.py", line 849, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [sorted_data] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x000001BC88E7BE58>>, 'request': <WSGIRequest: GET '/table/'>, 'user': <SimpleLazyObject: <User: erbatyr>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001BC88ED6E48>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001BC88ED6B48>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'paginator': None, 'page_obj': None, 'is_paginated': False, 'object_list': <QuerySet [<Company: Walmart>, <Company: Amazon>, <Company: Yum China>, <Company: Kroger>, <Company: Home Depot>, <Company: Berkshire Hathaway>, <Company: International Business Machines>, <Company: FedEx>, <Company: United Parcel Service>, <Company: Target Corporation>, <Company: General Electric>, <Company: Walgreens Boots Alliance>, <Company: Starbucks>, <Company: Albertsons>, <Company: PepsiCo>, <Company: Wells Fargo>, <Company: Cognizant Technology Solutions>, <Company: UnitedHealth Group>, <Company: Lowe's>, <Company: AT&T>, '...(remaining elements truncated)...']>, 'all_table': <QuerySet [<Company: Walmart>, <Company: Amazon>, <Company: Yum China>, <Company: Kroger>, <Company: Home Depot>, <Company: Berkshire Hathaway>, <Company: International Business Machines>, <Company: FedEx>, <Company: United Parcel Service>, <Company: Target Corporation>, <Company: General Electric>, <Company: Walgreens Boots Alliance>, <Company: Starbucks>, <Company: Albertsons>, <Company: PepsiCo>, <Company: Wells Fargo>, <Company: Cognizant Technology Solutions>, <Company: UnitedHealth Group>, <Company: Lowe's>, <Company: AT&T>, '...(remaining elements truncated)...']>, 'view': <table.views.SortView object at 0x000001BC88ED6D08>}, {'block': <Block Node: content. Contents: [<TextNode: '\n<table >\n  <thead>\n    <'>, <Variable Node: sorted_data>, <TextNode: '">rank</a></th>\n        <'>, <ForNode: for row in all_table, tail_len: 13>, <TextNode: '\n  </tbody>\n</table>\n'>]>}]
